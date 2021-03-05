@@ -10,6 +10,8 @@ void main(){
 
   //Operações Logicos com dart,
   //comparadores,Seguem o padrão de todas as linguagem >,<,>=,<=,==,!=, todos retornam true ou false dependendo da pergunta
+  // || ->(OR) && ->(E)  
+  //operador de negação ex: !true, !falso
   bool ehPar = ((2%2)==0);
   print(ehPar);
   ehPar = ((2%2)!=0);

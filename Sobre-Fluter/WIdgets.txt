@@ -1,0 +1,30 @@
+<-Widgets->
+--> São componentes que podemos colocar no nosso Layout 👍 
+    :https://flutter.dev/docs/development/ui/widgets-intro
+--> Para contruir uma tela vc irá construir uma arvore de widgets;
+
+->MAterial Designer->
+--> É uma metodologia criada pela google, pensada para ser simples, intuitiva etc..
+    https://material.io/design/introduction
+--> Utiliza regras de como deve se coportar um Layout, Como deve ser estrutura de tamanhos , Principios etc
+
+--> Começando Projeto do Zero <--
+1-> criar projeto flutter;
+2-> Excluir todo o codido do main para começar do zero;
+3-> Ir na pasta teste e deletar o widget_test;
+<-main.dart->
+
+    //todo projeto dart deve inicializar com a função main
+    //dentro do main devemos falar qual app vamos rodar(utilizando a funçao runApp que precisa das bibliotecas/pacotes "flutter/material.dart"
+    //especificamos um material app
+    //podemos informamos um titulo para app
+    //-->Temos que especificar a tela inicial da nossa  APp informando no parAMETRO home
+
+    import 'package:flutter/material.dart';
+
+    void main(){
+    runApp(MaterialApp(
+        title: "Contador de Pessoas",
+        home:Container(color: Colors.white,)
+    ));
+    }

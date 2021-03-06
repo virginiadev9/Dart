@@ -1,5 +1,5 @@
 //Classes e objetos em dart
-class Pessoa{             //Modificadores de acesso, _variavel
+class Pessoa{             //Modificadores de acesso, "_"antes da variavel ou no caso ATRIBUTO
   String _nome;
   int _idade;
   double _altura;

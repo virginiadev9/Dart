@@ -16,8 +16,8 @@ void main(){
   print(x);
 
   //Operador Default, se for null
-  String nome1= "default";
-  String senuloo = nome1 ?? "Não informado" ;
-  print(senuloo);
+  // String nome1;
+  // String senuloo = nome1 ?? "Não informado" ;
+  // print(senuloo);
 
 }

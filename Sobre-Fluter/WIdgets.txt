@@ -82,5 +82,16 @@ void main() {
         ],
       )));
 }
+<- Adicionando FlatButtons ao nosso projeto ->
+1-> Entre os texts adiciono o Flatbuton mais antes adiciono uma Linha(ROw)
+
+3-> Adicionando Imagens ao projeto
+4- criamos no diretorio contador pessoa uma pasta com nome images
+5->falamos pro flutter que no images ele tem uma imagem que devemos utilizar, -> pubspecyam e declara sessao de  assets la onde fala de imagens e assets
+assets:
+    - images/restaurant.jpg
+der pub get
+
+Agora vamos utilizar o width stack para sobrepor um width encima do outro
 
 

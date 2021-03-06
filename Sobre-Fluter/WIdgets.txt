@@ -28,3 +28,59 @@
         home:Container(color: Colors.white,)
     ));
     }
+--> Criando Colunas e textos <--
+Column é um tipo de widget que permite colar outros widths(eles se alinham na vertical e um encima do outro )
+1-> Passo os widget para o column pelo children(ou seja informo que eles são componenetes filhos)
+2-> O main deve ficar:
+import 'package:flutter/material.dart';
+
+void main(){
+  runApp(MaterialApp(
+      title: "Contador de Pessoas",
+      home:Column(
+        children: <Widget>[
+        Text("Pessoa:0")
+      ],
+      )
+  ));
+}
+3-> Agora vamos passar um estilo para nosso componente
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MaterialApp(
+      title: "Contador de Pessoas",
+      home: Column(
+        children: <Widget>[
+          Text(
+            "Pessoa:0",
+            style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+          )
+        ],
+      )));
+}
+4-> Para formatar em bom estado nos podemos usar atalho de reformatar cod crt+alt+l ou podemos fazer isso manualmente mesmo
+5-> Alinhando os widgets ao centro da tela, para fazermos isso precisamos especificar na coluna o Alinhamento para ela
+6-> Precisamos dizer que o mainAligment, ou alinhamento do eixo principal é o eixo vertical...
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MaterialApp(
+      title: "Contador de Pessoas",
+      home: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          Text(
+            "Pessoa:0",
+            style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+          ),
+          Text(
+            "Pode Entrar",
+            style: TextStyle(color: Colors.white, fontStyle: FontStyle.italic,
+                fontSize: 30.0),
+          )
+        ],
+      )));
+}
+
+

@@ -28,15 +28,29 @@ class Pessoa{
   set altura(double altura){
     this._altura=altura;
   }
+  void comprar(){
+    print("Pesooa comprou");
+  }
 
 }
-class  Cliente extends Pessoa{
-  String _cPF;
+class  Cliente extends Pessoa{      /**Toda classe no dart ja extends por ObrigAtOrio UMA CLASSE DO TIPO OBJETO E ESSA CLASSE JA VEM COM UM METODO toString */
+  String _cPF;                      /** e AGENTE PODE REESCREVER ESSE METODO */
 
-  Cliente(this._cPF, String nome,int idade, double altura) : super(nome,idade,altura); //obsever como passo para o construtor
+  Cliente(this._cPF, String nome,int idade, double altura) : super(nome,idade,altura); //obsever como passo para o 
+  
+  //reescrita de metodos
+  @override
   void comprar(){
-    print("comprar");
+    print("Cliente comprou");
   }
+  @override
+  String toString(){
+    return "CLIENTE | nome:$nome , altura:$altura \n";
+  }
+  void comprarAlgo(String algo){
+    print("a pessoa comprou $algo");
+  }
+
   String get cPF{
     return this._cPF;
   }
@@ -54,9 +68,7 @@ void main(){
   x1._altura = 1.74;
   print(x1.nome);
   print(x1.idade);
-  print(x1.cPF);
-
-
-
+  print("o cpf do maricas é: ${x1.cPF}");
+  print(x1.toString());
 
 }

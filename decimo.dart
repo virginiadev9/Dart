@@ -38,8 +38,10 @@ void main(){
 
   //armazenando Objetos
   Pessoa p1 = new Pessoa("valeria");
+  Pessoa p2 = new Pessoa("Lucas");
   List<Pessoa> ps = List.empty(growable: true);//indica que pode ser vazia
   ps.add(p1);
+  ps.add(p2);
   for(Pessoa p in ps){
     print(p.nome);
   }

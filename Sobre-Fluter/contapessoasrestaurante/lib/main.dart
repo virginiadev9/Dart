@@ -25,7 +25,10 @@ class _HomeState extends State<Home> {
         _lotadoOuNao="Lotado!";
       }
       else if(_people<0){
-        _lotadoOuNao="invertido, Falencia?";
+        _lotadoOuNao  ="invertido, Falencia?";
+      }
+      else{
+        _lotadoOuNao  ="Pode entrar!";
       }
     });
   }

@@ -25,8 +25,7 @@ class _HomeState extends State<Home> {
         ""; //não precisa dar setState nos controles pq apartir do momente que informo que eles sao controladores eles ja tem setSate
     setState(() {
       _infoText = "Informe seus dados";
-      _formKey = GlobalKey<FormState>();    // ADICIONE ESTA LINHA!
-
+      _formKey = GlobalKey<FormState>(); // ADICIONE ESTA LINHA!
     });
   }
 
@@ -111,8 +110,8 @@ class _HomeState extends State<Home> {
                   child: Container(
                     height: 50.0,
                     child: RaisedButton(
-                      onPressed: (){
-                        if(_formKey.currentState.validate()){
+                      onPressed: () {
+                        if (_formKey.currentState.validate()) {
                           _calculate();
                         }
                       },

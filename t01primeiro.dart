@@ -12,7 +12,7 @@ void main(){
   double preco = 10.50;
   bool aindaTem = true;//false
 
-  print(fruta);
+  print("$fruta custa x \$");//Vale lembrar que para acrescentar um caracter seja reservado pela linguagem em um print precisamos utilizar o "\carctere" ex: \$
   print(quantidade);
   print(preco);
   print(aindaTem);
